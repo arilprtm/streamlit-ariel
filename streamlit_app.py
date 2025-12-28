@@ -43,13 +43,9 @@ import streamlit as st
 st.subheader('Grafik 5 Negara Dengan Juara Terbanyak')
 
 
-import matplotlib.pyplot as plt
-import numpy as np
 import streamlit as st
+import pandas as pd
  
-x = np.random.normal(15, 5, 250)
- 
-fig, ax = plt.subplots()
-ax.bar(df["Team"], df["Juara"])
-st.pyplot(fig)
+st.bar_chart(df.set_index("Team")["Juara"])
+
 
