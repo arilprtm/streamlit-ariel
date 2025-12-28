@@ -1,10 +1,10 @@
 import streamlit as st
  
-st.title('Pemerograman Dasar Menggunakan Bahasa Python')
+st.title('Pemerograman Dasar')
 
 import streamlit as st
  
-st.header('Belajar Membuat Web Dengan Streamlit dan Bahasa Python')
+st.header('Pembelajaran Pengenalan Streamlit dan Cara Membuat Web dengan Streamlit')
 
 import streamlit as st
  
@@ -21,7 +21,7 @@ def jurusan():
 
 import streamlit as st
  
-st.text('Hallo semuanya!! Perkenalkan nama saya Ariel Akdes Pratama umur saya 20 tahun, saya sekarang sedang berkuliah di Politeknik Negeri Batam, dengan jurusan Teknik Elektro, Prodi D4 Teknologi Rekayasa Pembangkit Energi, dengan kelas B Pagi, ini adalah Web analisis menggunakan library Streamlit dan menggunakan bahasa pemerograman Python.')
+st.text('Halo semuanya, perkenalkan saya ariel akdes pratama saya merupakan mahasiswa politeknik negeri batam semester 3, jurusan saya adalah teknik elektro sedangkan prodi saya adalah teknologi rekayasa pembangkit energi dan sebagai mahasiswa saya belajar salah satunya tentang pemoragraman dasar yaitu pengenalan streamlit dan cara membuat web dengan streamlit,  ini adalah Web analisis menggunakan library Streamlit dan menggunakan bahasa pemerograman Python')
 
 
 
@@ -33,19 +33,19 @@ import pandas as pd
 import streamlit as st 
  
 df = pd.DataFrame({
-    'Team': ["Indonesia", "Thailand", "Malaysia", "Singapura", "Vietnam", "Philipina"],
-    'Juara': [20, 16, 15, 12, 9, 7],
+    'Negara': ["Indonesia", "Thailand", "Malaysia", "Singapura", "Vietnam", "Philipina"],
+    'Jumlah Medali': [20, 16, 15, 12, 9, 7],
 })
 st.table(data=df) 
 
 import streamlit as st
  
-st.subheader('Grafik 5 Negara Dengan Juara Terbanyak')
+st.subheader('Grafik 6 Negara Dengan Medali Terbanyak')
 
 
 import streamlit as st
 import pandas as pd
  
-st.bar_chart(df.set_index("Team")["Juara"])
+st.bar_chart(df.set_index("Negara")["Jumlah Medali"])
 
 
